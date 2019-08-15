@@ -3,6 +3,13 @@
 \documentclass{resume}
 %\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{xcolor}
+\newcommand\updateinfo{\par\vfill\hfill\scriptsize\centerline{\color{gray} Last updated on \today}}
+\newcommand{\authorlist}[1]{{\textcolor[rgb]{0,0,0}{#1}}}
+\newcommand{\papertitle}[1]{{``#1"}}
+\newcommand{\publicationaddr}[1]{{\textit{#1}}}
+
+
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
@@ -79,7 +86,19 @@ GPA/Ranking: 3.8/4.0,  \nth{1}/103
 \end{itemize}
 
 
-\section{Publications}
+\section{Selected Publications}
+
+\begin{enumerate}
+	\item \authorlist{\textbf{Yang Cheng}, Dan Li, Zhiyuan Guo, Binyao Jiang, Jiaxin Lin, Xi Fan, Jinkun Geng, Xinyi Yu, Wei Bai, Lei Qu, Ran Shu, Peng Cheng, Yongqiang Xiong, and Jianping Wu}, \papertitle{DLBooster: Boosting End-to-End Deep Learning Workflows with Offloading Data Preprocessing Pipelines}, \publicationaddr{In Proceedings of the 48th International Conference on Parallel Processing (ICPP 2019)}
+	\item \authorlist{Shuai Wang, Dan Li, Jinkun Geng, Yue Gu, and \textbf{Yang Cheng}}, \papertitle{Impact of Network Topology on the Performance of DML: Theoretical Analysis and Practical Factors}, \publicationaddr{In IEEE INFOCOM 2019-IEEE Conference on Computer Communications (INFOCOM 2019)}
+	\item \authorlist{Songtao Wang, Dan Li, \textbf{Yang Cheng}, Jinkun Geng, Yanshu Wang, Shuai Wang, Shutao Xia, and Jianping Wu}, \papertitle{BML: A High-performance, Low-cost Gradient Synchronization Algorithm for DML Training}, \publicationaddr{In Thirty-second Advances in Neural Information Processing Systems (NeurIPS 2018)}
+	\item \authorlist{\textbf{Yang Cheng}, Jinkun Geng, Yanshu Wang, Junfeng Li, Dan Li, and Jianping Wu}, \papertitle{Bridging machine learning and computer network research: a survey}, \publicationaddr{CCF Transactions on Networking (CCF ToN), 2018}
+	\item \authorlist{Zhetao Li, Fei Gui, Jinkun Geng, Dan Li, Zhibo Wang, Junfeng Li,\textbf{Yang Cheng}, and Usama Zafar}, \papertitle{Dante: Enabling FOV-Aware Adaptive FEC Coding for 360-Degree Video Streaming}, \publicationaddr{In Proceedings of the 2nd Asia-Pacific Workshop on Networking  (APNet 2018)}
+	\item \authorlist{Jinkun Geng, Dan Li,\textbf{Yang Cheng},Shuai Wang, and Junfeng Li}, \papertitle{HiPS: Hierarchical Parameter Synchronization in Large-Scale Distributed Machine Learning}, \publicationaddr{In Proceedings of the 2018 Workshop on Network Meets AI \& ML (NetAI 2018)}
+	\item \authorlist{Junfeng Li, Dan Li, Yukai Huang, \textbf{Yang Cheng}, and Ruilin Ling}, \papertitle{Quick NAT: High performance NAT system on commodity platforms}, \publicationaddr{In 2017 IEEE International Symposium on Local and Metropolitan Area Networks (LANMAN 2017)}
+\end{enumerate}
+
+\if false
 \datedsubsection{DLBooster: Boosting End-to-End Deep Learning Workflows with Offloading Data Preprocessing Pipelines}{}
 %\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
 %Brief introduction: xxx.
@@ -110,7 +129,7 @@ GPA/Ranking: 3.8/4.0,  \nth{1}/103
 %Brief introduction: xxx.
 \begin{itemize}
 	\item \textbf{Yang Cheng}, Jinkun Geng, Yanshu Wang, Junfeng Li, Dan Li, Jianping Wu
-	\item \textit{CCF Transactions on Networking (CCF ToN)}
+	\item \textit{CCF Transactions on Networking (CCF ToN), 2018}
 \end{itemize}
 
 \datedsubsection{Dante: Enabling FOV-Aware Adaptive FEC Coding for 360-Degree Video Streaming}{}
@@ -136,7 +155,7 @@ GPA/Ranking: 3.8/4.0,  \nth{1}/103
 	\item Junfeng Li, Dan Li, Yukai Huang, \textbf{Yang Cheng}, Ruilin Ling
 	\item \textit{23th IEEE International Symposium on Local and Metropolitan Area Networks (LANMAN 2017)}
 \end{itemize}
-
+\fi
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
 %An xxx optimized for xxx\cite{verma2015large}
@@ -164,6 +183,7 @@ GPA/Ranking: 3.8/4.0,  \nth{1}/103
 \datedline{First price, Award on the \nth{6} National College Students Mathematics Competition, Sichuan}{Nov. 2014}
 
 %% Reference
+\updateinfo
 %\newpage
 %\bibliographystyle{IEEETran}
 %\bibliography{mycite}
