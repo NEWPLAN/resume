@@ -1,0 +1,170 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Yang Cheng}
+
+\basicInfo{
+  \email{newplan001@163.com} \textperiodcentered\ 
+  \phone{(+86) 1XX-XXX-XXX6} \textperiodcentered\ 
+  \homepage[https://chengyang.info]{https://chengyang.info}}
+
+%\section{\faGraduationCap\ Education}
+\section{Education}
+\datedsubsection{\textbf{Tsinghua University}, Beijng, China}{2016.09 -- Present}
+\textit{Ph.D. student} in Computer Science and Technology\\
+Advisor(s): Prof. Jianping Wu and Asoc. Prof. Dan Li\\
+Research Interest: Distributed System, Networking Optimization, and System Security
+\datedsubsection{\textbf{University of Electronic Science and Technology of China}, Chengdu, China}{2012.09 -- 2016.07}
+\textit{B.Eng.} in Software Engineering\\
+GPA/Ranking: 3.8/4.0,  \nth{1}/103
+
+%\section{\faUsers\ Working Experience}
+\section{Working Experience}
+\datedsubsection{\textbf{Microsoft Research Asia}, Research Intern}{2018.04 -- 2018.10}
+%\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
+%Brief introduction: xxx.
+\begin{itemize}
+	\item Leading the AIPre project to accelerate end-to-end DL workflow in the cloud.
+  %\item Explored the efficiency of deep learning systems from an end-to-end perspective;
+  %\item Optimized DL frameworks to achieve maximum GPU performance in end2end DL workflows.
+\end{itemize}
+
+\datedsubsection{\textbf{Chengdu Haocaiduo Agricultural Technology Co. Ltd.}, Developing Engineer}{2014.06 -- 2014.07}
+%\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
+%Brief introduction: xxx.
+\begin{itemize}
+	\item Developing intelligent agricultural management system to simplify the management of crops;
+	%\item Developed communication primitives for agricultural sensors based on the ZigBee protocol.
+\end{itemize}
+
+\datedsubsection{\textbf{Tsinghua University}, Teaching Assistant}{}
+\begin{itemize}
+	\item \datedline{[00240112-90], [undergraduates], Next Generation Internet}{Spring of 2019}
+	\item \datedline{[00240112-90], [undergraduates], Next Generation Internet}{Spring of 2018}	
+	\item \datedline{[74120023-0], [graduates], Security Foundation and Frontier of Cyberspace}{Autumn of 2017}
+\end{itemize}
+
+
+%\section{\faUsers\ Working Experience}
+\section{Selected Projects}
+\datedsubsection{AIPre: Boosting end-to-end DL eorkflows in the cloud}{2018.04 -- 2018.10}
+%\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
+%Brief introduction: xxx.
+\begin{itemize}
+	\item Evaluate the performance of deep learning systems widely used today, from an end-to-end perspective;
+	\item Offload data preprocessing workloads to FPGAs to remove the CPU bottleneck in end2end DL workflows;
+	\item Overlap computation and communication by re-scheduling the computation workflow in BP;
+\end{itemize}
+
+\datedsubsection{BML: A scalable and high-performance DML system}{2017.09 -- 2018.01}
+%\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
+%Brief introduction: xxx.
+\begin{itemize}
+	\item Design novel synchronization paradigms for distributed Tensorflow, reducing data to be synchronized;
+	\item Incorporate RDMA and BCube topology to achieve high-performance data communication primitives;
+	\item Outperform the PS paradigm and the Ring paradigm by up to 2.4$\times$ and 1.2$\times$, respectively.
+\end{itemize}
+
+\datedsubsection{Virtual desktop management and control system}{2015.01 -- 2015.08}
+\begin{itemize}
+	\item Design a high-performance, cross-platform virtual desktop management system, with the SPICE protocol;
+	\item Implement tin-clients for Android and PC platform respectively,  to and interact with remote VM servers;
+	\item Design and implement SMx(2/3/4)-based encryption mechanism to protect user information from leakage
+\end{itemize}
+
+
+\section{Publications}
+\datedsubsection{DLBooster: Boosting End-to-End Deep Learning Workflows with Offloading Data Preprocessing Pipelines}{}
+%\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
+%Brief introduction: xxx.
+\begin{itemize}
+	\item \textbf{Yang Cheng}, Dan Li, Zhiyuan Guo, Binyao Jiang, Jiaxin Lin, Xi Fan, Jinkun Geng, Xinyi Yu, Wei Bai, Lei Qu, Ran Shu, Peng Cheng, Yongqiang Xiong, Jianping Wu
+	\item \textit{48th International Conference on Parallel Processing (ICPP 2019)}
+\end{itemize}
+
+\datedsubsection{Impact of Network Topology on the Performance of DML: Theoretical Analysis and Practical Factors}{}
+%\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
+%Brief introduction: xxx.
+\begin{itemize}
+	\item Shuai Wang, Dan Li, Jinkun Geng, Yue Gu, and \textbf{Yang Cheng}
+	\item \textit{IEEE International Conference on Computer Communications (INFOCOM 2019)}
+\end{itemize}
+
+\datedsubsection{BML: A High-performance, Low-cost Gradient Synchronization Algorithm for DML Training}{}
+%\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
+%Brief introduction: xxx.
+\begin{itemize}
+	\item Songtao Wang, Dan Li, \textbf{Yang Cheng}, Jinkun Geng, Yanshu Wang, Shuai Wang, Shutao Xia, Jianping Wu
+	\item \textit{Thirty-second Conference on Neural Information Processing Systems (NeurIPS 2018)}
+\end{itemize}
+
+
+\datedsubsection{Bridging machine learning and computer network research: a survey}{}
+%\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
+%Brief introduction: xxx.
+\begin{itemize}
+	\item \textbf{Yang Cheng}, Jinkun Geng, Yanshu Wang, Junfeng Li, Dan Li, Jianping Wu
+	\item \textit{CCF Transactions on Networking (CCF ToN)}
+\end{itemize}
+
+\datedsubsection{Dante: Enabling FOV-Aware Adaptive FEC Coding for 360-Degree Video Streaming}{}
+%\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
+%Brief introduction: xxx.
+\begin{itemize}
+	\item Zhetao Li, Fei Gui, Jinkun Geng, Dan Li, Zhibo Wang, Junfeng Li,\textbf{Yang Cheng}, Usama Zafar
+	\item \textit{2nd Asia-Pacific Workshop on Networking (APNet 2018)}
+\end{itemize}
+
+\datedsubsection{HiPS: Hierarchical Parameter Synchronization in Large-Scale Distributed Machine Learning}{}
+%\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
+%Brief introduction: xxx.
+\begin{itemize}
+	\item Jinkun Geng, Dan Li,\textbf{Yang Cheng},Shuai Wang, Junfeng Li
+	\item \textit{ACM SIGCOMM 2018 Workshop on Network Meets AI \& ML (NetAI 2018)}
+\end{itemize}
+
+\datedsubsection{Quick NAT: High performance NAT system on commodity platforms}{}
+%\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
+%Brief introduction: xxx.
+\begin{itemize}
+	\item Junfeng Li, Dan Li, Yukai Huang, \textbf{Yang Cheng}, Ruilin Ling
+	\item \textit{23th IEEE International Symposium on Local and Metropolitan Area Networks (LANMAN 2017)}
+\end{itemize}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\if false
+%\section{\faCogs\ Skills}
+\section{Skills}
+\begin{itemize}[parsep=0.5ex]
+  \item Programming Languages: C == Python > C++ > Java
+  \item Platform: Linux
+  \item Development: Web, xxx
+\end{itemize}
+\fi
+
+%\section{\faHeartO\ Honors and Awards}
+\section{Selected Honors}
+\datedline{Outstanding graduates in Sichuan province}{Jun. 2016}
+\datedline{Tang Lixin Scholarship, UESTC}{Sep. 2015}
+\datedline{National Scholarship}{Sep. 2015}
+\datedline{National Endeavor Scholarship}{Sep. 2013}
+\datedline{First price, Award on the \nth{8} National College Student Information Security Contest}{Aug. 2015}
+\datedline{First price, Award on the \nth{6} National College Students Mathematics Competition, Sichuan}{Nov. 2014}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
