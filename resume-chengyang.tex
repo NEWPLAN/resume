@@ -4,7 +4,8 @@
 %\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{xcolor}
-\newcommand\updateinfo{\par\vfill\hfill\scriptsize\centerline{\color{gray} Last updated on \today}}
+%\newcommand\updateinfo{\par\vfill\hfill\scriptsize\centerline{\color{gray} Last updated on \today}}
+\newcommand\updateinfo{\par\vfill\hfill\tiny\centerline{\color{black} Last updated on \today}}
 \newcommand{\authorlist}[1]{{\textcolor[rgb]{0,0,0}{#1}}}
 \newcommand{\papertitle}[1]{{``#1"}}
 \newcommand{\publicationaddr}[1]{{\textit{#1}}}
@@ -18,7 +19,7 @@
 
 \basicInfo{
   \email{newplan001@163.com} \textperiodcentered\ 
-  \phone{(+86) 1XX-XXX-XXX6} \textperiodcentered\ 
+  \phone{(+86) 186-XXX-XXX6} \textperiodcentered\ 
   \homepage[https://chengyang.info]{https://chengyang.info}}
 
 %\section{\faGraduationCap\ Education}
@@ -75,7 +76,7 @@ GPA/Ranking: 3.8/4.0,  \nth{1}/103
 \begin{itemize}
 	\item Design novel synchronization paradigms for distributed Tensorflow, reducing data to be synchronized;
 	\item Incorporate RDMA and BCube topology to achieve high-performance data communication primitives;
-	\item Outperform the PS paradigm and the Ring paradigm by up to 2.4$\times$ and 1.2$\times$, respectively.
+	\item Outperform the PS and the Ring paradigms by up to 2.4$\times$ and 1.2$\times$ training throughput, respectively.
 \end{itemize}
 
 \datedsubsection{Virtual desktop management and control system}{2015.01 -- 2015.08}
@@ -88,7 +89,7 @@ GPA/Ranking: 3.8/4.0,  \nth{1}/103
 
 \section{Selected Publications}
 
-\begin{enumerate}
+\begin{enumerate}[label={[\arabic*]}, noitemsep]
 	\item \authorlist{\textbf{Yang Cheng}, Dan Li, Zhiyuan Guo, Binyao Jiang, Jiaxin Lin, Xi Fan, Jinkun Geng, Xinyi Yu, Wei Bai, Lei Qu, Ran Shu, Peng Cheng, Yongqiang Xiong, and Jianping Wu}, \papertitle{DLBooster: Boosting End-to-End Deep Learning Workflows with Offloading Data Preprocessing Pipelines}, \publicationaddr{In Proceedings of the 48th International Conference on Parallel Processing (ICPP 2019)}
 	\item \authorlist{Shuai Wang, Dan Li, Jinkun Geng, Yue Gu, and \textbf{Yang Cheng}}, \papertitle{Impact of Network Topology on the Performance of DML: Theoretical Analysis and Practical Factors}, \publicationaddr{In IEEE INFOCOM 2019-IEEE Conference on Computer Communications (INFOCOM 2019)}
 	\item \authorlist{Songtao Wang, Dan Li, \textbf{Yang Cheng}, Jinkun Geng, Yanshu Wang, Shuai Wang, Shutao Xia, and Jianping Wu}, \papertitle{BML: A High-performance, Low-cost Gradient Synchronization Algorithm for DML Training}, \publicationaddr{In Thirty-second Advances in Neural Information Processing Systems (NeurIPS 2018)}
@@ -179,8 +180,8 @@ GPA/Ranking: 3.8/4.0,  \nth{1}/103
 \datedline{Tang Lixin Scholarship, UESTC}{Sep. 2015}
 \datedline{National Scholarship}{Sep. 2015}
 \datedline{National Endeavor Scholarship}{Sep. 2013}
-\datedline{First price, Award on the \nth{8} National College Student Information Security Contest}{Aug. 2015}
-\datedline{First price, Award on the \nth{6} National College Students Mathematics Competition, Sichuan}{Nov. 2014}
+\datedline{First prize, awarded on the \nth{8} National College Student Information Security Contest}{Aug. 2015}
+\datedline{First prize, awarded on the \nth{6} National College Students Mathematics Competition, Sichuan}{Nov. 2014}
 
 %% Reference
 \updateinfo
