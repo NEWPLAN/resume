@@ -1,11 +1,16 @@
 % !TEX program = xelatex
 
 \documentclass{resume}
+
+\usepackage{datetime}
+\newdateformat{monthyeardate}{%
+	\monthname[\THEMONTH], \THEYEAR}
 %\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{xcolor}
 %\newcommand\updateinfo{\par\vfill\hfill\scriptsize\centerline{\color{gray} Last updated on \today}}
-\newcommand\updateinfo{\par\vfill\hfill\tiny\centerline{\color{black} Last updated on \today}}
+%\newcommand\updateinfo{\par\vfill\hfill\tiny\centerline{\color{black} Last updated on \today}}
+\newcommand\updateinfo{\par\vfill\hfill\scriptsize\centerline{\color{black} Last updated on \monthyeardate\today}}
 \newcommand{\authorlist}[1]{{\textcolor[rgb]{0,0,0}{#1}}}
 \newcommand{\papertitle}[1]{{``#1"}}
 \newcommand{\publicationaddr}[1]{{\textit{#1}}}
@@ -26,11 +31,11 @@
 %\section{\faGraduationCap\ Education}
 \section{Education}
 \datedsubsection{\textbf{Tsinghua University}, Beijng, China}{2016.09 -- Present}
-\textit{Ph.D. student} in Computer Science and Technology\\
-Advisor(s): Prof. Jianping Wu and Asoc. Prof. Dan Li\\
-Research Interest: Distributed System, Networking Optimization, and System Security
+\textit{Ph.D.} in Computer Science and Technology\\
+Advisor(s): Prof. Jianping Wu and Assoc. Prof. Dan Li\\
+Research Interests: Distributed System, Networking System, and Performance Optimization
 \datedsubsection{\textbf{University of Electronic Science and Technology of China}, Chengdu, China}{2012.09 -- 2016.07}
-\textit{B.Eng.} in Software Engineering\\
+\textit{B.Eng.} in Software Engineering, graduating with honors\\
 GPA/Ranking: 3.8/4.0,  \nth{1}/103
 
 %\section{\faUsers\ Working Experience}
@@ -39,12 +44,12 @@ GPA/Ranking: 3.8/4.0,  \nth{1}/103
 %\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
 %Brief introduction: xxx.
 \begin{itemize}
-	\item Leading the AIPre project to accelerate end-to-end DL workflow in the cloud.
+	\item Leading the AIPre project to accelerate end-to-end DL workflows in the cloud.
   %\item Explored the efficiency of deep learning systems from an end-to-end perspective;
   %\item Optimized DL frameworks to achieve maximum GPU performance in end2end DL workflows.
 \end{itemize}
 
-\datedsubsection{\textbf{Chengdu Haocaiduo Agricultural Technology Co. Ltd.}, Developing Engineer}{2014.06 -- 2014.07}
+\datedsubsection{\textbf{Chengdu Haocaiduo Agricultural Technology Co., Ltd.}, Developing Engineer}{2014.06 -- 2014.07}
 %\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
 %Brief introduction: xxx.
 \begin{itemize}
@@ -62,13 +67,13 @@ GPA/Ranking: 3.8/4.0,  \nth{1}/103
 
 %\section{\faUsers\ Working Experience}
 \section{Selected Projects}
-\datedsubsection{AIPre: Boosting end-to-end DL eorkflows in the cloud}{2018.04 -- 2018.10}
+\datedsubsection{AIPre: Boosting end-to-end DL workflows in the cloud}{2018.04 -- 2018.10}
 %\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
 %Brief introduction: xxx.
 \begin{itemize}
 	\item Evaluate the performance of deep learning systems (TF, PyTorch, Caffe), from an end-to-end perspective;
 	\item Offload data preprocessing workloads to FPGAs to remove the CPU bottleneck in end2end DL workflows;
-	\item Overlap computation and communication by re-scheduling the computation workflow in BP.
+	\item Overlap gradient computation and error propagation by re-scheduling BP workflows when training NNs.
 \end{itemize}
 
 \datedsubsection{BML: A scalable and high-performance DML system}{2017.09 -- 2018.01}
