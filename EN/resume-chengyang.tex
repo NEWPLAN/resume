@@ -1,0 +1,168 @@
+% !TEX program = xelatex
+
+\documentclass{resume}
+
+\usepackage{datetime}
+\newdateformat{monthyeardate}{%
+	\monthname[\THEMONTH], \THEYEAR}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{xcolor}
+%\newcommand\updateinfo{\par\vfill\hfill\scriptsize\centerline{\color{gray} Last updated on \today}}
+%\newcommand\updateinfo{\par\vfill\hfill\tiny\centerline{\color{black} Last updated on \today}}
+\newcommand\updateinfo{\par\vfill\hfill\scriptsize\centerline{\color{black} Last updated on \monthyeardate\today}}
+\newcommand{\authorlist}[1]{{\textcolor[rgb]{0,0,0}{#1}}}
+\newcommand{\papertitle}[1]{{``#1"}}
+\newcommand{\publicationaddr}[1]{{\textit{#1}}}
+
+
+
+\usepackage{geometry}
+\geometry{left=1.5cm, right=1.5cm}
+%\geometry{left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm}
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Yang Cheng}
+
+\basicInfo{
+  \email{newplan001@163.com} \textperiodcentered\ 
+  \phone{(+86) 186-6182-8256} \textperiodcentered\ 
+  \homepage[https://chengyang.info]{https://chengyang.info}}
+
+%\section{\faGraduationCap\ Education}
+\section{Education}
+\datedsubsection{\textbf{Tsinghua University}, Beijng, China}{2016.09 -- Present}
+\textit{Ph.D.} student in Computer Science and Technology\\
+Advisor(s): Prof. Jianping Wu and Assoc. Prof. Dan Li\\
+Research Interests: I'm broadly interested in the intersection of computer networks \& system architecture, devoted to building large-scale, high-performance networked systems, with special focus on distributed machine learning systems
+\datedsubsection{\textbf{University of Electronic Science and Technology of China}, Chengdu, China}{2012.09 -- 2016.07}
+\textit{B.Eng.} in Software Engineering (focus on embedded systems), graduating with honors\\
+GPA/Ranking: 3.8/4.0,  \nth{1}/103
+
+%\section{\faUsers\ Working Experience}
+\section{Working Experience}
+\datedsubsection{\textbf{Microsoft Research Asia}, \textit{Research Intern}}{2018.04 -- 2018.10}
+%\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
+%Brief introduction: xxx.
+\begin{itemize}
+	\item Leading the AIPre project to accelerate end-to-end DL workflows in the cloud.
+  %\item Explored the efficiency of deep learning systems from an end-to-end perspective;
+  %\item Optimized DL frameworks to achieve maximum GPU performance in end2end DL workflows.
+\end{itemize}
+
+\datedsubsection{\textbf{Chengdu Haocaiduo Agricultural Technology Co., Ltd.}, \textit{Developing Engineer}}{2014.06 -- 2014.07}
+%\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
+%Brief introduction: xxx.
+\begin{itemize}
+	\item Developing intelligent agricultural management system to simplify the management of crops;
+	%\item Developed communication primitives for agricultural sensors based on the ZigBee protocol.
+\end{itemize}
+
+\datedsubsection{\textbf{Tsinghua University}, \textit{Teaching Assistant}}{}
+\begin{itemize}
+	\item \datedline{[00240112-90], [undergraduates], Next Generation Internet}{Spring of 2018 \& 2019}
+	\item \datedline{[74120023-0], [graduates], Security Foundation and Frontier of Cyberspace}{Fall of 2017}
+\end{itemize}
+
+
+%\section{\faUsers\ Working Experience}
+\section{Selected Projects}
+\datedsubsection{Mars: practical data-driven routing with multi-agent reinforcement learning}{2019.06 -- 2019.12}
+%\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
+%Brief introduction: xxx.
+\begin{itemize}
+	\item Exploring practically traffic scheduling for data-driven networks with multi-agent reinforcement learning.
+	%\item Assigning multiple agents at each broader router and a centralized global critic for training;
+	%\item Prototype architecture design: centralized offline training \& distributed online decisioning.
+\end{itemize}
+
+\datedsubsection{AIPre: Boosting end-to-end DL workflows in the cloud}{2018.04 -- 2018.10}
+%\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
+%Brief introduction: xxx.
+\begin{itemize}
+	\item Evaluate the performance bottleneck of DL systems (TF, PyTorch, Caffe) from the end-to-end perspective;
+	\item Offload data preprocessing workloads to FPGAs to remove the CPU bottleneck in end2end DL workflows;
+	\item Overlap gradient computing and error propagating by re-scheduling BP workflows when training NNs on the GPU.
+\end{itemize}
+
+\datedsubsection{BML: A scalable and high-performance DML system}{2017.09 -- 2018.01}
+%\role{Research Intern}{Manager(s): Yongqiang Xiong and Guangshu Liu}
+%Brief introduction: xxx.
+\begin{itemize}
+	\item Re-design fine-grained data slicing and synchronizing paradigms to reduce the communication cost of DML;
+	\item Build high-performance, parallel data communication primitives with codesign of RDMA and BCube topology;
+	\item Outperform the PS and Ring paradigms by up to 2.4$\times$ and 1.2$\times$ end2end training throughput, respectively.
+\end{itemize}
+
+\datedsubsection{Virtual desktop management and control system}{2015.01 -- 2015.08}
+\begin{itemize}
+	\item Design a high-performance, cross-platform virtual desktop management system with the SPICE protocol;
+	\item Implement tin-clients on Android and PC platforms,  to interact with the VMs running on remote server;
+	\item Design and implement SMx(2/3/4)-based encryption mechanism to protect user information from leakage
+\end{itemize}
+
+
+\section{Selected Publications}
+
+%enumerate
+\begin{enumerate}[label={[\arabic*]}, noitemsep]
+	
+	\item \authorlist{\textbf{Yang Cheng}, Dan Li, Jing Zhu, Hongnan Liu, Kai Chen, and Jianping Wu}, \papertitle{Managing Multicast Membership for Software Defined Data Center Network}, \publicationaddr{the workshop of the IEEE 92nd Vehicular Technology Conference on New Network Architecture Powering Internet-of-Things, VTC2020-Fall (W10), Oct., 2020, Victoria, BC Canada.}
+	
+	\item \authorlist{Songtao Wang, Dan Li, \textbf{Yang Cheng}, Jinkun Geng, Yanshu Wang, Shuai Wang, Shutao Xia, and Jianping Wu}, \papertitle{BML: A Scalable, High-performance and Fault-tolerant Network Architecture for Distributed Machine Learning}, \publicationaddr{IEEE/ACM Transactions on Networking (ACM/IEEE ToN), 2020}
+	
+	\item \authorlist{Kaihui Gao, Dan Li, Li Chen, Jinkun Geng, Fei Gui, \textbf{Yang Cheng}, and Yue Gu}, \papertitle{Incorporating Intra-flow Dependencies and Inter-flow Correlations for Traffic Matrix Prediction}, \publicationaddr{IEEE/ACM International Symposium on Quality of Service (ACM/IEEE IWQoS 2020), Jun., 2020, Hangzhou, China}
+	
+	\item \authorlist{Kaihui Gao, Dan Li, Li Chen, Jinkun Geng, Fei Gui, \textbf{Yang Cheng}, and Yue Gu}, \papertitle{Predicting Traffic Demand Matrix by Considering Inter-flow Correlations}, \publicationaddr{ the first IEEE INFOCOM Workshop on Networking Algorithms (WNA), Jul., 2020, Toronto, Canada.}
+	
+	\item \authorlist{\textbf{Yang Cheng}, Dan Li, Zhiyuan Guo, Binyao Jiang, Jiaxin Lin, Xi Fan, Jinkun Geng, Xinyi Yu, Wei Bai, Lei Qu, Ran Shu, Peng Cheng, Yongqiang Xiong, and Jianping Wu}, \papertitle{DLBooster: Boosting End-to-End Deep Learning Workflows with Offloading Data Preprocessing Pipelines}, \publicationaddr{In Proceedings of the 48th International Conference on Parallel Processing (ICPP 2019), Aug., 2019, Tokyo, Japan.}
+	
+	\item \authorlist{Shuai Wang, Dan Li, Jinkun Geng, Yue Gu, and \textbf{Yang Cheng}}, \papertitle{Impact of Network Topology on the Performance of DML: Theoretical Analysis and Practical Factors}, \publicationaddr{In IEEE INFOCOM 2019-IEEE Conference on Computer Communications (INFOCOM 2019), May, 2019, Paris, France.}
+	
+	\item \authorlist{Songtao Wang, Dan Li, \textbf{Yang Cheng}, Jinkun Geng, Yanshu Wang, Shuai Wang, Shutao Xia, and Jianping Wu}, \papertitle{BML: A High-performance, Low-cost Gradient Synchronization Algorithm for DML Training}, \publicationaddr{In Thirty-second Advances in Neural Information Processing Systems (NeurIPS 2018), Dec., 2018, Montreal, Canada.}
+	
+	\item \authorlist{\textbf{Yang Cheng}, Jinkun Geng, Yanshu Wang, Junfeng Li, Dan Li, and Jianping Wu}, \papertitle{Bridging machine learning and computer network research: a survey}, \publicationaddr{CCF Transactions on Networking (CCF ToN), 2018, 1(1-4): 1-15.}
+	
+	\item \authorlist{Zhetao Li, Fei Gui, Jinkun Geng, Dan Li, Zhibo Wang, Junfeng Li,\textbf{Yang Cheng}, and Usama Zafar}, \papertitle{Dante: Enabling FOV-Aware Adaptive FEC Coding for 360-Degree Video Streaming}, \publicationaddr{In Proceedings of the 2nd Asia-Pacific Workshop on Networking  (APNet 2018), Aug., 2018, Beijing, China.}
+	
+	\item \authorlist{Jinkun Geng, Dan Li,\textbf{Yang Cheng},Shuai Wang, and Junfeng Li}, \papertitle{HiPS: Hierarchical Parameter Synchronization in Large-Scale Distributed Machine Learning}, \publicationaddr{In Proceedings of the 2018 Workshop on Network Meets AI \& ML (NetAI 2018), Aug., 2018, Budapest, Hungary.}
+	
+	\item \authorlist{Junfeng Li, Dan Li, Yukai Huang, \textbf{Yang Cheng}, and Ruilin Ling}, \papertitle{Quick NAT: High performance NAT system on commodity platforms}, \publicationaddr{In 2017 IEEE International Symposium on Local and Metropolitan Area Networks (LANMAN 2017), Jun., 2017, Osaka, Japan.}
+	
+\end{enumerate}
+
+
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\if false
+%\section{\faCogs\ Skills}
+\section{Skills}
+\begin{itemize}[parsep=0.5ex]
+  \item Programming Languages: C == Python > C++ > Java
+  \item Platform: Linux
+  \item Development: Web, xxx
+\end{itemize}
+\fi
+
+%\section{\faHeartO\ Honors and Awards}
+\section{Selected Honors}
+\datedline{Outstanding graduates in Sichuan province}{Jun. 2016}
+\datedline{Tang Lixin Scholarship, UESTC}{Sep. 2015}
+\datedline{National Scholarship}{Sep. 2015}
+\datedline{National Endeavor Scholarship}{Sep. 2013}
+\datedline{First prize, awarded on the \nth{8} National College Student Information Security Contest}{Aug. 2015}
+\datedline{First prize, awarded on the \nth{6} National College Students Mathematics Competition, Sichuan}{Nov. 2014}
+
+%% Reference
+\updateinfo
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
